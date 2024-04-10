@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 import { StatusCodes } from "http-status-codes";
-import User from "../models/UserModel";
-import ApiError from "../utils/ApiError";
+import User from "../models/UserModel.js";
+import ApiError from "../utils/ApiError.js";
 
 const checkPermission = async (req, res, next) => {
     try {
