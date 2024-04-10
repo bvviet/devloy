@@ -1,6 +1,6 @@
 import { Router } from "express";
-import StationsController from "../controllers/stations";
-import { uploadImage } from "../config/cloudinaryConfig";
+import StationsController from "../controllers/stations.js";
+import { uploadImage } from "../config/cloudinaryConfig.js";
 const stationsRouter = Router();
 
 stationsRouter.get("/", StationsController.getAllStations);

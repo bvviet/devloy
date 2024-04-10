@@ -1,7 +1,7 @@
-import User from "../models/UserModel";
+import User from "../models/UserModel.js";
 import bcryptjs from "bcryptjs";
 import Jwt from "jsonwebtoken";
-import { registerValidate, loginValidate } from "../validations/validationAuth";
+import { registerValidate, loginValidate } from "../validations/validationAuth.js";
 class AuthController {
     async getAllUser(req, res) {
         try {

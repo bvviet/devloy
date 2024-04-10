@@ -1,6 +1,6 @@
 import { Router } from "express";
-import ImageController from "../controllers/images";
-import { uploadImage } from "../config/cloudinaryConfig";
+import ImageController from "../controllers/images.js";
+import { uploadImage } from "../config/cloudinaryConfig.js";
 
 const imageRouter = Router();
 

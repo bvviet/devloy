@@ -1,6 +1,6 @@
 import { response } from "express";
-import trips from "../models/TripModel";
-import tripsValidate from "../validations/validationTrips";
+import trips from "../models/TripModel.js";
+import tripsValidate from "../validations/validationTrips.js";
 import moment from "moment";
 class TripsController {
     // GetAll

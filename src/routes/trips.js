@@ -1,5 +1,5 @@
 import { Router } from "express";
-import TripsController from "../controllers/trips";
+import TripsController from "../controllers/trips.js";
 const tripsRouter = Router();
 
 tripsRouter.get("/", TripsController.getAllTrips);

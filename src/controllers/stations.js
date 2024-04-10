@@ -1,5 +1,5 @@
 import { json } from "express";
-import stations from "../models/StationModel";
+import stations from "../models/StationModel.js";
 class StationsController {
     // GetAll
     async getAllStations(req, res) {
