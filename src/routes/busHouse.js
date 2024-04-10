@@ -1,6 +1,6 @@
 import { Router } from "express";
-import BusHouseController from "../controllers/busHouse";
-import checkPermission from "../middlewares/checkPermision";
+import BusHouseController from "../controllers/busHouse.js";
+import checkPermission from "../middlewares/checkPermision.js";
 const busHouseRouter = Router();
 
 busHouseRouter.get("/", BusHouseController.getAllBusHouse);

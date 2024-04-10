@@ -1,4 +1,4 @@
-import BusHouse from "../models/BusHouseModel";
+import BusHouse from "../models/BusHouseModel.js";
 class BusHouseController {
     // GetAll
     async getAllBusHouse(req, res) {
