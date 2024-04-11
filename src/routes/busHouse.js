@@ -5,7 +5,7 @@ const busHouseRouter = Router();
 
 busHouseRouter.get("/", BusHouseController.getAllBusHouse);
 busHouseRouter.get("/:id", BusHouseController.getDetailBusHouse);
-busHouseRouter.post("/", BusHouseController.CreateBusHouse);
+busHouseRouter.post("/", checkPermission, BusHouseController.CreateBusHouse);
 busHouseRouter.put("/:id", BusHouseController.UpdateBusHouse);
 busHouseRouter.delete("/:id", BusHouseController.DeleteBusHouse);
 
