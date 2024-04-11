@@ -38,7 +38,7 @@ class StationsController {
     async CreateStations(req, res) {
         console.log(req.file, req.body);
         try {
-            const station = await stations.create({ ...req.body, imageUrl: req.file.path });
+            const station = await stations.create({ ...req.body, image: req.file.path });
             res.status(200).json({
                 message: "Create done",
                 data: station,
@@ -49,6 +49,7 @@ class StationsController {
             });
         }
     }
+
     // Update
     async UpdateStations(req, res) {
         try {
