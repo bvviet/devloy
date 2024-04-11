@@ -9,7 +9,11 @@ const StationSchema = new Schema({
     province: {
         type: String,
         require: true,
-    }
+    },
+    image: {
+        type: String,
+        required: true,
+    },
 });
 
 const Stations = mongoose.model("stations", StationSchema);
