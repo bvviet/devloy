@@ -105,7 +105,7 @@ class TripsController {
         try {
             // Validation
             const { error } = tripsValidate.validate(req.body);
-            console.log(error);
+            console.log(error); 
             if (error) {
                 const errors = error.details.map((err) => err.message);
                 return res.status(400).json({
